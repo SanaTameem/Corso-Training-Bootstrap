@@ -3,14 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/fontawesome.css" />
-    <title>Corso Website</title>
+    <link rel="icon" href="images/favicon.png" />
+    <title>Corso Training</title>
   </head>
   <body>
-    <h1><i class="fas fa-star"></i>Hello World</h1>
-    <button class="btn btn-primary">Submit</button>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="./images/logo.png" alt="logo image" width="150" />
+        </a>
+        <div
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#discover" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#takeaways" class="nav-link">Takeaways</a>
+            </li>
+            <li class="nav-item">
+              <a href="#subscribe" class="nav-link">Subscribe</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header py-7 vh-100">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-12 text-container">
+            <h1 class="display-2 mt-3 text-white">
+              Explore Our Training and Seminar Videos
+            </h1>
+            <p class="lead text-white mb-4 m-auto w-75">
+              Whether you're a beginner or an experienced professional, our
+              carefully curated content will empower you to enhance your skills
+              and expand your knowledge
+            </p>
+            <a href="#register" class="btn btn-primary text-uppercase"
+              >Register</a
+            >
+            <a href="#discover" class="btn btn-outline-light text-uppercase"
+              >Discover</a
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- Image Slider -->
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  class="active"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                ></button>
+              </div>
+
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img src="./images/header-slide-1.jpg" alt="slide1 image" class="d-block w-100 rounded-5">
+                </div>
+                <div class="carousel-item active">
+                  <img src="./images/header-slide-2.jpg" alt="slide1 image" class="d-block w-100 rounded-5">
+                </div>
+                <div class="carousel-item active">
+                  <img src="./images/header-slide-3.jpg" alt="slide1 image" class="d-block w-100 rounded-5">
+                </div>
+              </div>
+
+              <!-- Previous Next Buttons -->
+              <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slider">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slider">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
