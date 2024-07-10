@@ -22,4 +22,17 @@
   .navbar{
     background: var(--bs-dark);
   }
+
+  .header{
+    height: 800px !important;
+    min-height: 800px !important;
+  }
+
+  .register h2{
+    text-align: center;
+  }
+
+  #summary{
+    width: 90% !important;
+  }
 }
